@@ -13,8 +13,8 @@ def info(url):
     length=str(int(video.length/60))
     ratings=str(int(video.rating))
     views=str(int(video.views))
-    print(colored("\n\t\tTitle: "+video.title+"\n","red"))
-    print(colored("\t\t\t\tLength: "+length+"\tViews: "+views+"\tRatings: "+ratings+"\n","green"))
+    #print(colored("\n\t\tTitle: "+video.title+"\n","red"))
+    #print(colored("\t\t\t\tLength: "+length+"\tViews: "+views+"\tRatings: "+ratings+"\n","green"))
     startDownload(url)
 
 def completeDownload(stream=None, file_path=None):
@@ -68,9 +68,9 @@ gui.title("Youtube video downloader")
 
 
 
-file=PhotoImage(file="gui.png")
-icon=Label(gui,image=file)
-icon.pack(side=TOP,pady=3)
+#file=PhotoImage(file="gui.png")
+#icon=Label(gui,image=file)
+#icon.pack(side=TOP,pady=3)
 #URL field
 url=Entry(gui,justify=CENTER)
 url.pack(side=TOP,fill=X,padx=10,pady=20)
